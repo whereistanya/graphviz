@@ -1,0 +1,28 @@
+// A tragic bootstrapping story. 
+
+digraph Boot {
+  bgcolor = transparent
+  rankdir = LR
+
+  node [style=filled,color=black,fillcolor=white,height=1,shape=rect,penwidth=2];
+
+  frontend [shape=rect,color=black,fillcolor=green];
+  storage [shape=box3d,color=black,fillcolor=cyan]; //,style=invisible];
+  decryption [shape=circle,color=black,fillcolor=gold]; //,style=invisible];
+  authentication [shape=circle,color=black,fillcolor=gold];// style=invisible];
+  jobcontrol [label="job control",color=black,fillcolor=cyan]; // shape=rect,style=invisible];
+  consensus [shape=egg,color=black,fillcolor=gold]; // style=invisible];
+  config [shape=component,label="config management",fillcolor=pink]; //,style=invisible];
+  registry [shape=box3d,labe="service registry",color=black,fillcolor=pink]; //,style=invisible];
+
+  frontend -> storage [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  storage -> decryption [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  decryption -> authentication [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  authentication -> storage [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  jobcontrol -> config [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  config -> consensus [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  consensus -> registry [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+  registry -> jobcontrol [color=white,penwidth=2]; // ,style=invisible,arrowhead=none];
+  jobcontrol -> authentication [color=white,penwidth=2]; //,style=invisible,arrowhead=none];
+}
+
