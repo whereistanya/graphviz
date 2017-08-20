@@ -3,23 +3,23 @@
 digraph Before {
   bgcolor = transparent
 
-	subgraph cluster_0 {
-		node [style=filled,color=orange,height=0.1];
-		a0 [shape=rect,label="currency converter"];
-		label = "sales service";
+  subgraph cluster_0 {
+    node [style=filled,color=orange,height=0.1];
+    a0 [shape=rect,label="currency converter"];
+    label = "sales service";
     style=filled;
     color=black;
     fillcolor=white;
     penwidth=2;
-	}
+  }
 
-	subgraph cluster_1 {
-		node [style=filled,color=orange,height=0.1];
-		b0 [shape=rect,label="currency converter"];
-		label = "payments service";
+  subgraph cluster_1 {
+    node [style=filled,color=orange,height=0.1];
+    b0 [shape=rect,label="currency converter"];
+    label = "payments service";
     style=filled;
     color=black;
     fillcolor=white;
     penwidth=2;
-	}
+  }
 }
