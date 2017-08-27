@@ -1,5 +1,3 @@
-// Two services that each contain a currency converter library.
-
 digraph Stack {
   bgcolor = transparent
   rankdir = "LR"
