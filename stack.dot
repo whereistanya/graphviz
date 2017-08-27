@@ -1,0 +1,30 @@
+// Two services that each contain a currency converter library.
+
+digraph Stack {
+  bgcolor = transparent
+  rankdir = "LR"
+
+  subgraph cluster_0 {
+    node [style=filled,fontcolor=white,width=6];
+    a0 [shape=rect,color=blue,label=<
+      <FONT POINT-SIZE="20">¯\_(ツ)_/¯</FONT> <br/>
+      <FONT POINT-SIZE="15">Unknowable frontend user things</FONT>
+    >];
+    a1 [shape=rect,color=orange,label=<
+      <FONT POINT-SIZE="20">My users</FONT> <br/>
+      <FONT POINT-SIZE="15">The ones I know about, anyway</FONT>
+    >];
+    a2 [shape=rect,color=darkgreen,label=<
+      <FONT POINT-SIZE="20">My stuff</FONT> <br/>
+      <FONT POINT-SIZE="15">The center of the universe!</FONT>
+    >];
+    a3 [shape=rect,color=orange,label=<
+      <FONT POINT-SIZE="20">My dependencies</FONT> <br/>
+      <FONT POINT-SIZE="15">The ones I know about, anyway</FONT>
+    >];
+    a4 [shape=rect,color=blue,label=<
+      <FONT POINT-SIZE="20">¯\_(ツ)_/¯</FONT> <br/>
+      <FONT POINT-SIZE="15">Unknowable backend infrastructure things</FONT>
+    >];
+  }
+}
