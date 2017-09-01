@@ -1,0 +1,17 @@
+digraph {
+  // White nodes, edges and text on a transparent background.
+  bgcolor = transparent
+  edge [color=white,penwidth=2]
+  node [color=white,style=bold,fontcolor=white]
+
+  // Dependencies.
+  webserver -> cat_chooser
+  cat_chooser -> cat_geotagger
+  cat_chooser -> cat_sentiment_analyzer
+  cat_chooser -> catness_analyzer
+  cat_chooser -> storage
+  catness_analyzer -> cat_chooser
+  catness_analyzer -> storage
+  cat_geotagger -> storage
+  cat_sentiment_analyzer -> storage
+} 
