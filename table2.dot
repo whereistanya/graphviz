@@ -5,14 +5,14 @@ digraph G {
   bgcolor = transparent
   rankdir = "RL"
 
-	graph [splines = false]
+  graph [splines = false]
   node [fontsize=30]
- 	stack [shape = none,
-       	 label = <<table border="0" cellspacing="0">
+  stack [shape = none,
+         label = <<table border="0" cellspacing="0">
                   <tr><td port="frontend" border="1" bgcolor="yellow" height="100px" width="280px">Frontend!</td></tr>
                   <tr><td port="alsofront" border="1" bgcolor="pink" height="60px" width="280px">Front-ish!</td></tr>
                   <tr><td port="backend" border="1" bgcolor="yellow" height="160px" width="280px">Backend!</td></tr>
-            	   </table>>
+                 </table>>
     ]
 
   emoji [shape = none,

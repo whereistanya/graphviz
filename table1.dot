@@ -3,21 +3,21 @@ digraph G {
   bgcolor = transparent
   rankdir = "RL"
 
-	graph [splines = false]
+  graph [splines = false]
   node [fontsize=30]
- 	stack [shape = none,
-       	 label = <<table border="0" cellspacing="0">
+  stack [shape = none,
+         label = <<table border="0" cellspacing="0">
                   <tr><td port="frontend" border="1" bgcolor="yellow" height="160px" width="280px">Frontend!</td></tr>
                   <tr><td port="backend" border="1" bgcolor="yellow" height="160px" width="280px">Backend!</td></tr>
-            	   </table>>
-    ]
+                 </table>>
+        ]
 
-	emoji [shape = none,
-				 label = <<table border="0" cellspacing="0">
+ emoji [shape = none,
+        label = <<table border="0" cellspacing="0">
                   <tr><td port="shrug" height="180px"><img src="emoji_shrug.png"/></td></tr>
                   <tr><td port="sunglasses" height="160px"><img src="emoji_sunglasses.png"/></td></tr>
-				         </table>>
-		]
+                </table>>
+       ]
     emoji:shrug -> stack:frontend [penwidth=10];
     emoji:sunglasses -> stack:backend [penwidth=10];
 }
